@@ -5,7 +5,7 @@
 [![Tests](https://github.com/Kapp1/nawa-tracking/actions/workflows/ci.yml/badge.svg)](https://github.com/Kapp1/nawa-tracking/actions)
 [![Deploy](https://img.shields.io/badge/Live-Dashboard-brightgreen?logo=streamlit)](https://nawa-tracking.streamlit.app)
 [![License](https://img.shields.io/github/license/Kapp1/nawa-tracking)](LICENSE)
-[![Streamlit demo](https://img.shields.io/badge/Live‑Demo-streamlit.app-brightgreen?logo=streamlit&style=flat-square)](https://nawa-tracking.streamlit.app)
+[![Streamlit demo](https://img.shields.io/badge/Live-Demo--streamlit.app-brightgreen?logo=streamlit&style=flat-square)](https://nawa-tracking.streamlit.app)
 
 **Smart pilgrim management toolkit.**  
 Face recognition, behavior monitoring, real-time Streamlit dashboard, and auto-generated PDF reports.
