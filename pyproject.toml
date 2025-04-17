@@ -33,3 +33,18 @@ Homepage = "https://github.com/Kapp1/nawa-tracking"
 Documentation = "https://github.com/Kapp1/nawa-smart-hajj"
 Source = "https://github.com/Kapp1/nawa-tracking"
 Issues = "https://github.com/Kapp1/nawa-tracking/issues"
+
+[tool.poetry]
+name = "nawa-tracking"
+version = "0.1.0"
+description = "NAWA tracking demo package"
+authors = ["Khalid A <kapp6@protonmail.com>"]
+# إضافة هذا السطر يعرّف مكان كودك
+packages = [{ include = "nawa" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.44"
+boto3 = "^1.37"
+fpdf2 = "2.7.7"
+pandas = "^2.2"
