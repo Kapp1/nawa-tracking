@@ -6,4 +6,4 @@ __codename__ = "O3"      # codename اختياري داخلي
 
 from .matcher import simulate_match
 from .behavior import analyze_behavior
-from .report import generate_report
+from .report import build_pdf
