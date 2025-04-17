@@ -1,7 +1,7 @@
 # 🕋 nawa-tracking
 
 [![PyPI version](https://img.shields.io/pypi/v/nawa-tracking.svg?color=blue&logo=python&label=PyPI&style=flat-square)](https://pypi.org/project/nawa-tracking/)
-[![Python](https://img.shields.io/pypi/pyversions/nawa-tracking?style=flat-square)](https://pypi.org/project/nawa-tracking/)
+[![PyPI version](https://img.shields.io/pypi/v/nawa-tracking)](https://pypi.org/project/nawa-tracking/)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 
 > **Python SDK & PoC** for the NAWA Smart Pilgrim Management Platform  
@@ -12,7 +12,8 @@
 ## ⚡ Quick install
 
 ```bash
-pip install nawa-tracking
+- pip install git+https://github.com/Kapp1/nawa-tracking.git
++ pip install nawa-tracking
 ```
 
 ---
