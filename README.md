@@ -1,5 +1,4 @@
-```markdown
-# 🧠 NAWA Realtime Face Matcher SDK & Dashboard
+# 👾 NAWA Realtime Face Matcher SDK & Dashboard
 
 [![PyPI version](https://img.shields.io/pypi/v/nawa-tracking?color=blue)](https://pypi.org/project/nawa-tracking/)
 [![Tests](https://github.com/Kapp1/nawa-tracking/actions/workflows/ci.yml/badge.svg)](https://github.com/Kapp1/nawa-tracking/actions)
@@ -9,6 +8,7 @@
 
 **Smart pilgrim management toolkit.**  
 Face recognition, behavior monitoring, real-time Streamlit dashboard, and auto-generated PDF reports.
+
 
 ---
 
