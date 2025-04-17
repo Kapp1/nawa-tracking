@@ -1,76 +1,79 @@
 ```markdown
-# 🕋 NAWA‑tracking · Realtime Face‑Match SDK
+# 🧠 NAWA Realtime Face Matcher SDK & Dashboard
 
-[![PyPI](https://img.shields.io/pypi/v/nawa-tracking.svg?logo=pypi&color=blue&style=flat-square)](https://pypi.org/project/nawa-tracking)
+[![PyPI version](https://img.shields.io/pypi/v/nawa-tracking?color=blue)](https://pypi.org/project/nawa-tracking/)
+[![Tests](https://github.com/Kapp1/nawa-tracking/actions/workflows/ci.yml/badge.svg)](https://github.com/Kapp1/nawa-tracking/actions)
+[![Deploy](https://img.shields.io/badge/Live-Dashboard-brightgreen?logo=streamlit)](https://nawa-tracking.streamlit.app)
+[![License](https://img.shields.io/github/license/Kapp1/nawa-tracking)](LICENSE)
 [![Streamlit demo](https://img.shields.io/badge/Live‑Demo-streamlit.app-brightgreen?logo=streamlit&style=flat-square)](https://nawa-tracking.streamlit.app)
-[![License: Apache‑2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square)](LICENSE)
 
-> **Python SDK + PoC dashboard** for the **NAWA** Smart Pilgrim Platform —  
-> Edge‑AI face matching, behavioural analytics, and on‑the‑fly PDF reporting.
+**Smart pilgrim management toolkit.**  
+Face recognition, behavior monitoring, real-time Streamlit dashboard, and auto-generated PDF reports.
 
 ---
 
-## ⚡ Install
+## ⚙ Installation
+
+Install from PyPI:
 
 ```bash
 pip install nawa-tracking
 ```
 
-> Latest dev snapshot:
-> `pip install git+https://github.com/Kapp1/nawa-tracking.git`
+Or install the development version:
+
+```bash
+pip install git+https://github.com/Kapp1/nawa-tracking.git
+```
 
 ---
 
-## ▶️ Try the live dashboard
+## 📊 Live Dashboard
+
+Run locally with Streamlit:
 
 ```bash
 git clone https://github.com/Kapp1/nawa-tracking
 cd nawa-tracking
-pip install -e .[dashboard]          # streamlit + plotly + pandas
-streamlit run app.py                 # open http://localhost:8501
+pip install -e .[dashboard]
+streamlit run app.py
 ```
 
-To enable AWS Rekognition, add secrets to 
-`.streamlit/secrets.toml`:
+Or use the hosted version: [nawa-tracking.streamlit.app](https://nawa-tracking.streamlit.app)
 
-```toml
-AWS_ACCESS_KEY_ID     = "XXX"
-AWS_SECRET_ACCESS_KEY = "YYY"
-AWS_DEFAULT_REGION    = "me-central-1"
-NAWA_COLLECTION       = "NAWA_PILGRIMS"
+---
+
+## ✅ Run Tests
+
+```bash
+pytest -q
 ```
 
 ---
 
-## 🔑 Main features
+## 📦 Extras
 
-| 🧩 Module         | Purpose                                                         |
-|-------------------|-----------------------------------------------------------------|
-| `nawa.matcher`    | Rekognition call wrapper / local simulator for latency testing |
-| `nawa.behavior`   | Detect forbidden‑zone movement & abnormal patterns             |
-| `nawa.report`     | Generate PDF report via **fpdf2**                              |
-| `app.py`          | Live Streamlit dashboard (file upload / webcam)                |
-
----
-
-## 🚀 Deploy recipes
-
-| Scenario              | Quick command                                                                   |
-|-----------------------|---------------------------------------------------------------------------------|
-| **Docker**            | `docker build -t nawa . && docker run -p8501:8501 nawa`                         |
-| **Streamlit Cloud**   | Push repo ▸ Settings ▸ Secrets ▸ add AWS keys                                   |
-| **AWS Elastic Beanstalk** | Use Dockerfile above then `eb deploy`                                       |
+| Feature              | Quick hint                                                                 |
+|----------------------|----------------------------------------------------------------------------|
+| **Docker image**     | `FROM python:3.11-slim` → CMD `["streamlit", "run", "app.py"]`             |
+| **Streamlit Cloud**  | Add `streamlit config.toml` with `[server] enableXsrfProtection = false`   |
+| **AWS Beanstalk**    | Use Dockerfile above, push via EB CLI                                      |
 
 ---
 
-## 🤝 Contributing
+## 📄 License
 
-Pull requests & issues are welcome.  
-See `CONTRIBUTING.md` for style guide and CI rules.
+Licensed under the [Apache 2.0 License](LICENSE)
 
 ---
 
-## 📄 License
+### 🧠 What’s next?
 
-Released under the **Apache 2.0** License. See [LICENSE](LICENSE) for details.
+1. `git add README.md`
+2. `git commit -m "Update README with badges and full instructions"`
+3. `git push origin main`
+
+Done ✅ If you need help recording a short demo video or adding animated previews, let me know.
 ```
+
+---
