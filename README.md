@@ -6,8 +6,11 @@
 ---
 
 ## ⚡ Quick install
+
 ```bash
 pip install nawa-tracking
+
+```
 
 ---
 
