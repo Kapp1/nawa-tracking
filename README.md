@@ -16,7 +16,8 @@
 pip install nawa-tracking
 ```
 
-> Latest dev snapshot: `pip install git+https://github.com/Kapp1/nawa-tracking.git`
+> Latest dev snapshot:
+> `pip install git+https://github.com/Kapp1/nawa-tracking.git`
 
 ---
 
@@ -29,7 +30,8 @@ pip install -e .[dashboard]          # streamlit + plotly + pandas
 streamlit run app.py                 # open http://localhost:8501
 ```
 
-To enable AWS Rekognition, add secrets to `.streamlit/secrets.toml`:
+To enable AWS Rekognition, add secrets to 
+`.streamlit/secrets.toml`:
 
 ```toml
 AWS_ACCESS_KEY_ID     = "XXX"
