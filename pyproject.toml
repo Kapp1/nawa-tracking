@@ -37,7 +37,5 @@ Issues = "https://github.com/Kapp1/nawa-tracking/issues"
 [tool.poetry]
 name = "nawa-tracking"
 version = "0.1.0"
-description = "NAWA demo package"
-authors = ["Khaled <kapp6@protonmail.com>"]
-# 👇 this line tells Poetry where the code lives
-packages = [{ include = "nawa" }]
+description = "NAWA demo"
+packages = [{ include = "nawa" }]   # 👈 this points to the folder that holds __init__.py
