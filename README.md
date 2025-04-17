@@ -6,10 +6,8 @@
 ---
 
 ## ⚡ Quick install
-
 ```bash
-pip install git+https://github.com/Kapp1/nawa-tracking.git
-```
+pip install nawa-tracking
 
 ---
 
