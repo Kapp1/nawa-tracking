@@ -1,5 +1,9 @@
 # 🕋 nawa-tracking
 
+[![PyPI version](https://img.shields.io/pypi/v/nawa-tracking.svg?color=blue&logo=python&label=PyPI&style=flat-square)](https://pypi.org/project/nawa-tracking/)
+[![Python](https://img.shields.io/pypi/pyversions/nawa-tracking?style=flat-square)](https://pypi.org/project/nawa-tracking/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+
 > **Python SDK & PoC** for the NAWA Smart Pilgrim Management Platform  
 > AI-powered facial-matching, behaviour analysis, and PDF reporting.
 
@@ -9,7 +13,6 @@
 
 ```bash
 pip install nawa-tracking
-
 ```
 
 ---
@@ -24,7 +27,7 @@ streamlit run app.py
 
 ---
 
-## 🧩 5 – (Optional) Extras
+## 🧩 (Optional) Extras
 
 | Feature                      | Quick hint                                                                  |
 |-----------------------------|------------------------------------------------------------------------------|
@@ -36,7 +39,7 @@ streamlit run app.py
 
 ## ✅ What’s next?
 
-- [ ] Support Arabic/English dual-language reports.
-- [ ] Add face thumbnails inside the PDF.
-- [ ] Save match logs to SQLite or Firebase.
-- [ ] Add interactive heatmaps for pilgrim movement.
+- [ ] Add QR & face thumbnail to PDF
+- [ ] Auto-logging into SQLite
+- [ ] CI/CD auto-publish via GitHub Actions
+- [ ] Arabic/English dual-mode UI
