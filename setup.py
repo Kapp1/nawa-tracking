@@ -8,7 +8,7 @@ setup(
     license="Apache License 2.0",
     packages=find_packages(),
     install_requires=[
-        "fpdf2==2.7.7",
+        "fpdf2==2.8.8",
         "boto3>=1.34"
     ],
     python_requires=">=3.8",
